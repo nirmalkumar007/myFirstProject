@@ -1,0 +1,47 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar align-title="center" class="bar-positive">
+      <ion-nav-back-button class="no-text"></ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+        <h1 class="title">HOME</h1>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+    <ion-content scroll="true" class="has-header has-subheader">
+      <div class="card">
+        <div class="item item-image">
+          <img src="img/landing.jpg">
+        </div>
+      </div>
+      <div class="padding-horizontal">
+        <button  class="button button-block button-positive margin" ng-click="openBrowser('https://www.google.co.in/')">
+          PAY STUB
+        </button>
+      </div>
+      <div class="padding-horizontal">
+        <button class="button button-block button-positive padding" ng-click="openBrowser('https://www.yahoo.co.in/')">
+          TAX FORMS
+        </button>
+      </div>
+      <div class="padding-horizontal">
+        <button  class="button button-block button-positive padding" ng-click="openBrowser('https://www.facebook.com')">
+          EDR
+        </button>
+      </div>
+      </div>
+    </ion-content>
+  </ion-side-menu-content>
+  <ion-side-menu side="left">
+    <ion-side-menu>
+      <div class="menu-wrapper">
+        <ul class="list">
+          <li class="item">Home</li>
+          <li class="item">Pay Stub</li>
+          <li class="item">Tax Forms</li>
+          <li class="item">EDR</li>
+        </ul>
+      </div>
+    </ion-side-menu>
+  </ion-side-menu>
+</ion-side-menus>
